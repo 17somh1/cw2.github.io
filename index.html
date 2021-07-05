@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucshop</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="app.js" async></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Bucshop: The best books money can buy.</a>
+            <div class="navbar__toggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#cart" class="navbar__links">CART</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <h1 class="section-header">Products:</h1>
+    <br>
+    <br><hr><br>
+    <section class="container content-section">
+        <div class="shop-item">
+            <a class="shop-item-title" href="./dieter_rams.html">Dieter Rams: Ten Principles for Good Design</a>
+            <img class="shop-item-image" src=https://prestelpublishing.penguinrandomhouse.de/content/edition/covervoila_hires/Rams_Ten_Principles_for_Good_Design_213863.jpg>
+            <br>
+            <h3 class="text">Cees W. De Jong</h3>
+            <br>
+            <p class="text">Dieter Rams' aesthetic philosophy, this book presents highlights from a forty-year career designing iconic consumer products.</p>
+            <div class="shop-item-details">
+                <span class="shop-item-price">£24.63</span>
+                <button class="btn btn-primary shop-item-button" type="button" onclick="added()">ADD TO CART</button>
+            </div>
+        </div>    
+
+        <div class="shop-item">
+            <br><hr><br>
+            <a class="shop-item-title" href="./wabi_sabi.html">Wabi Sabi : Japanese Wisdom for a Perfectly Imperfect Life</a>
+            <img class="shop-item-image" src=http://cdn.shopify.com/s/files/1/0286/9890/2603/products/hbg-title-9780349420998-26_1200x1200.jpg?v=1587648427>
+            <br>
+            <h3 class="text">Beth Kempton</h3>
+            <br>
+            <p class="text">A whole new way of looking at the world - and your life - inspired by centuries-old Japanese wisdom.</p>
+
+            <div class="shop-item-details">
+                <span class="shop-item-price">£10.05</span>
+                <button class="btn btn-primary shop-item-button" type="button" onclick="added()">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="shop-item">
+            <br><hr><br>
+            <a class="shop-item-title" href="./out_gobi.html">Out of the Gobi : My Story of China and America</a>
+            <img class="shop-item-image" src=https://cdn.shopify.com/s/files/1/0272/7087/3174/products/44279ecd4e43579a332bcce23db6891d_500x.jpg?v=1589085060>
+            <br>
+            <h3 class="text">Weijian Shan</h3>
+            <br>
+            <p class="text">A powerful memoir and commentary that will be one of the most important books on China of our time.</p>
+
+            <div class="shop-item-details">
+                <span class="shop-item-price">£15.74</span>
+                <button class="btn btn-primary shop-item-button" type="button" onclick="added()">ADD TO CART</button>
+            </div>
+        </div>
+        
+        <div class="shop-item">
+            <br><hr><br>
+            <a class="shop-item-title" href="./simple.html">Ottolenghi SIMPLE</a>
+            <img class="shop-item-image" src=https://images-na.ssl-images-amazon.com/images/I/81XwsaynX1L.jpg>
+            <br>
+            <h3 class="text">Yotam Ottolenghi</h3>
+            <br>
+            <p class="text">Ottolenghi SIMPLE is the stunning new cookbook we have all been wishing for: Yotam Ottolenghi's vibrant food made easy.</p>
+            <div class="shop-item-details">
+                <span class="shop-item-price">£23.28</span>
+                <button class="btn btn-primary shop-item-button" type="button" onclick="added()">ADD TO CART</button>
+            </div>
+        </div>  
+            
+        <div class="shop-item">
+            <br><hr><br>
+            <a class="shop-item-title" href="./conficence.html">Creative Confidence : Unleashing the Creative Potential within Us All</a>
+            <img class="shop-item-image" src=https://images-na.ssl-images-amazon.com/images/I/816C08X4elL.jpg>
+            <br>
+            <h3 class="text">Tom Kelly & David Kelly</h3>
+            <br>
+            <p class="text">A powerful and inspiring book from the founders of IDEO, the award-winning design firm, on unleashing the creativity that lies within each and every one of us.</p>
+
+            <div class="shop-item-details">
+                <span class="shop-item-price">£8.91</span>
+                <button class="btn btn-primary shop-item-button" type="button" onclick="added()"> ADD TO CART</button>
+            </div>
+            <br><hr><br>
+        </div>
+    </section>
+
+        <section class="container content-section">
+            <h1 class="section-header" id="cart">CART</h1>
+            <br>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total Price:</strong>
+                <span class="cart-total-price">£0</span>
+            </div>
+        <button class="btn btn-primary btn-purchase" type="button"onclick="location.href='payment.html'">Continue To Checkout</button>
+    </section>
+
+
+
+</body>
+</html>
