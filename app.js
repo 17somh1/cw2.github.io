@@ -100,7 +100,3 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '£' + total
 }
-// Code for shopping cart
-// taken from YouTube post by Web Dev Simplified
-// accessed 14-05-2021
-// https://www.youtube.com/watch?v=YeFzkC2awTM&t=653s
